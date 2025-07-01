@@ -5,7 +5,7 @@
             <h1>{{ name }}</h1>
         </div>
         <h3>{{isStudent ? 'A student of VueJs' : 'No, not a student of VueJs' }}</h3>
-        <h1>{{ msg }}</h1>
+        <h1 v-show='isStudent'>{{ msg }}</h1>
         <p>{{ count }}</p>
         <!-- v-on:click (directive) = @click -->
         <button @click="increment">Increment</button>

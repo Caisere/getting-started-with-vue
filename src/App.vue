@@ -1,26 +1,30 @@
 <template>
     <img alt="Vue logo" src="./assets/logo.png">
-    <!-- <UserAvatar/> -->
+    <!-- <img alt="Vue logo" src="./assets/logo.png">
+    <UserAvatar/>
     <HelloWorld msg="Welcome to Your Vue.js App" name="Omoshola"/>
-    <VueDirectives/>
-    <div class="footer">
+    <VueDirectives/> -->
+    <FormComponent/>
+    <!-- <div class="footer">
         <FooterComponent/>
-    </div>
+    </div> -->
 </template>
 
 <script>
-import FooterComponent from './components/Footer.vue';
-import HelloWorld from './components/HelloWorld.vue'
+// import FooterComponent from './components/Footer.vue';
+// import HelloWorld from './components/HelloWorld.vue'
 // import UserAvatar from './components/Avatar.vue';
-import VueDirectives from './components/Directives.vue';
+// import VueDirectives from './components/Directives.vue';
+import FormComponent from './components/FormComponent.vue';
 
 export default {
     name: 'App',
     components: {
-        HelloWorld,
+        // HelloWorld,
         // UserAvatar,
-        VueDirectives,
-        FooterComponent,
+        // VueDirectives,
+        // FooterComponent,
+        FormComponent
     }
 }
 </script>
