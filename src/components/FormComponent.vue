@@ -9,7 +9,7 @@
         <button type="submit">Submit</button>
     </form>
 
-    <div>
+    <div v-show="showInfo">
         <p>Name: {{ name }}</p>
         <p>Email: {{ email }}</p>
         <p>Password: {{ password }}</p>
@@ -23,7 +23,8 @@
             return {
                 name: '',
                 email: '',
-                password: ''
+                password: '',
+                showInfo: false
             }
         },
         methods: {
@@ -34,6 +35,7 @@
                 this.name = formData.get('name');
                 this.email = formData.get('email');
                 this.password = formData.get('password');
+                this.showInfo = true;
                 console.log(`Name: ${this.name}, Email: ${this.email}, Password: ${this.password}`);
             }
         },
