@@ -1,11 +1,17 @@
 <template>
     <form @submit.prevent="handleSubmit">
-        <label for="name">Name</label>
-        <input type="text" placeholder="Enter your name" name="name" id="name" />
-        <label for="email">Email</label>
-        <input type="email" placeholder="Enter your email" name="email" id="email" />
-        <label for="password">Password</label>
-        <input type="password"  placeholder="Enter your password" name="password" id="password"/>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter your name" name="name" id="name" />
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your email" name="email" id="email" />
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter your password" name="password" id="password" />
+        </div>
         <button type="submit">Submit</button>
     </form>
 
@@ -43,7 +49,7 @@
 </script>
 
 style <style scoped>
-    form {
+    form, div {
         display: flex;
         flex-direction: column;
         width: 300px;
